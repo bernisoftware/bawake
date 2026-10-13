@@ -3,6 +3,15 @@
     <channel>
         <title>bAwake</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Tue, 13 Oct 2026 11:12:20 -0300</pubDate>
+            <link>https://bernisoftware.github.io/bawake/</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/bernisoftware/bawake/releases/download/v1.1.0/bAwake-1.1.0.dmg" length="5665434" type="application/octet-stream" sparkle:edSignature="fHxC9QpYpjwLH/C78NrOn+SvnrVFrdUxhTYaqPj3KHDkUx6oEv+a67TKB+iFlWXL677HmAn2stjhtHucWkXcAA=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Tue, 13 Oct 2026 10:39:49 -0300</pubDate>
             <link>https://bernisoftware.github.io/bawake/</link>
