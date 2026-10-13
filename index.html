@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bAwake — see why your Mac won't sleep</title>
+<meta name="description" content="bAwake is a free macOS menu bar app by Berni Software. See what keeps your Mac awake, and keep it awake while your AI agents and builds work.">
+<meta property="og:title" content="bAwake — see why your Mac won't sleep">
+<meta property="og:description" content="Free macOS menu bar app by Berni Software.">
+<meta property="og:image" content="https://bernisoftware.github.io/bawake/icon.png">
+<link rel="icon" href="favicon.png">
+<style>
+:root {
+  --bg: #fbf8f4; --surface: #ffffff; --text: #1d1a17; --muted: #6b635b; --line: #e7dfd6;
+  --accent: #c2691b; --accent-strong: #a35310; --code: #1c1a18; --code-text: #f4ede6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151311; --surface: #1f1c19; --text: #f3eee9; --muted: #a79d93; --line: #332e29;
+    --accent: #d9822f; --accent-strong: #f0a050; --code: #0d0c0b; --code-text: #f4ede6;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent-strong); }
+main { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+header.hero { text-align: center; padding: 72px 0 48px; }
+header.hero img { width: 128px; height: 128px; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 16px 0 12px; letter-spacing: -0.02em; }
+.lead { font-size: 1.25rem; color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.button { display: inline-block; padding: 12px 22px; border-radius: 12px; text-decoration: none; font-weight: 600; }
+.button.primary { background: var(--accent-strong); color: #fff; }
+.button.secondary { border: 1px solid var(--line); color: var(--text); background: var(--surface); }
+.meta { margin-top: 14px; color: var(--muted); font-size: 0.9rem; }
+pre { background: var(--code); color: var(--code-text); padding: 14px 16px; border-radius: 12px;
+  overflow-x: auto; font: 14px/1.5 ui-monospace, "SF Mono", Menlo, monospace; margin: 0; }
+section { padding: 40px 0; border-top: 1px solid var(--line); }
+h2 { font-size: 1.6rem; margin: 0 0 20px; letter-spacing: -0.01em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.card p { margin: 0; color: var(--muted); }
+.install { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.maker { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.maker p { margin: 0 0 10px; max-width: 620px; }
+.links { display: flex; gap: 18px; flex-wrap: wrap; }
+footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; text-align: center; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" alt="" width="128" height="128">
+    <h1>See why your Mac won't sleep.</h1>
+    <p class="lead">bAwake is a small macOS menu bar app that shows what is keeping your Mac awake, and keeps it awake while your AI agents and builds work. Free, from Berni Software.</p>
+    <div class="actions">
+      <a class="button primary" href="https://github.com/bernisoftware/bawake/releases/latest">Download for macOS</a>
+      <a class="button secondary" href="https://github.com/bernisoftware/bawake">GitHub</a>
+    </div>
+    <p class="meta">macOS 14 Sonoma or later · Apple silicon and Intel · 38 languages</p>
+  </header>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Inspector</h3><p>Every process keeping your Mac awake right now, with the reason it gave.</p></div>
+      <div class="card"><h3>Agents and builds</h3><p>Detects Claude Code, Codex, Gemini CLI, Aider, xcodebuild, npm, cargo and more. Stays awake until they finish and tells you when they need you.</p></div>
+      <div class="card"><h3>Sleep history</h3><p>A timeline of each night: when your Mac slept, woke, and what kept it up.</p></div>
+      <div class="card"><h3>Sessions</h3><p>Awake for 15 minutes, an hour, four hours or until you turn it off, with the equivalent <code>caffeinate</code> command.</p></div>
+      <div class="card"><h3>Rules</h3><p>Stay awake on your Wi-Fi networks, on the power adapter, with an external display, or during a Focus.</p></div>
+      <div class="card"><h3>Shortcuts and Siri</h3><p>“Keep my Mac awake with bAwake.” Start, stop and check bAwake from Shortcuts, Siri, Spotlight or the Action button.</p></div>
+      <div class="card"><h3>Lid closed and safety</h3><p>Optionally stays awake with the lid closed. Lets the Mac sleep when the battery runs low or it gets too hot.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Install</h2>
+    <div class="install">
+      <div><p>Homebrew</p><pre>brew install --cask bernisoftware/tap/bawake</pre></div>
+      <div><p>Command line, included in the app</p><pre>bawake -- npm run build
+bawake --for 2h
+bawake status</pre></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Made by Berni Software</h2>
+    <div class="maker">
+      <div>
+        <p>Berni Software builds apps, systems and IT solutions in Porto Alegre, Brazil, since 2013. We made bAwake for the way we work with AI agents every day, and we share it free with the community.</p>
+        <div class="links">
+          <a href="https://www.bernisoftware.com.br">bernisoftware.com.br</a>
+          <a href="https://instagram.com/berni.software">Instagram</a>
+          <a href="https://github.com/bernisoftware">GitHub</a>
+          <a href="mailto:atendimento@bernisoftware.com.br">atendimento@bernisoftware.com.br</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Berni Software LTDA · Free to use · <a href="https://github.com/bernisoftware/bawake/issues">Report a problem</a></footer>
+</body>
+</html>
