@@ -3,6 +3,15 @@
     <channel>
         <title>bAwake</title>
         <item>
+            <title>1.1.7</title>
+            <pubDate>Sun, 18 Oct 2026 10:47:56 -0300</pubDate>
+            <link>https://bernisoftware.github.io/bawake/</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/bernisoftware/bawake/releases/download/v1.1.7/bAwake-1.1.7.dmg" length="5841227" type="application/octet-stream" sparkle:edSignature="eu5h0giSQ5JS9hrgV7stYkAahbcqX89Be0sUv3zP2DKCcU8aGP590dATjOU8gWy/mT/CYESVltH2tGhZDYNYDw=="/>
+        </item>
+        <item>
             <title>1.1.6</title>
             <pubDate>Sun, 18 Oct 2026 10:43:17 -0300</pubDate>
             <link>https://bernisoftware.github.io/bawake/</link>
@@ -19,15 +28,6 @@
             <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/bernisoftware/bawake/releases/download/v1.1.5/bAwake-1.1.5.dmg" length="5848972" type="application/octet-stream" sparkle:edSignature="qDihEz1Kf+6SfK6U57brhuzNksBnpjMwzCZ2kt7Pc1UMDyRHumZG3X72I3Ss2m90voMbfEmqIL1DLfZbdSkNCQ=="/>
-        </item>
-        <item>
-            <title>1.1.4</title>
-            <pubDate>Sat, 17 Oct 2026 11:33:38 -0300</pubDate>
-            <link>https://bernisoftware.github.io/bawake/</link>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/bernisoftware/bawake/releases/download/v1.1.4/bAwake-1.1.4.dmg" length="5839974" type="application/octet-stream" sparkle:edSignature="gRNGjykN/Fq1x7zGQLvQ+npKqYr1EuETzVeUXv7lKgKq6UzszNzgdJy8Wq5xnRA3Eu3ZwFFIbGnRJFeIMXOSBw=="/>
         </item>
     </channel>
 </rss>
